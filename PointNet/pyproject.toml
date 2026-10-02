@@ -1,0 +1,43 @@
+[project]
+name = "3dgpe-pointnet"
+version = "0.0.0"
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+    "tqdm",
+    "h5py",
+    "numpy",
+    "torch",
+    "torchvision",
+    "triton; sys_platform == 'linux'",
+    "matplotlib",
+    "scipy",
+    "optuna",
+    "plotly",
+    "pandas",
+    "ray",
+    "mlflow",
+    "torch-optimizer",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu130", marker = "sys_platform == 'linux'" },
+]
+torchvision = [
+    { index = "pytorch-cu130", marker = "sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[dependency-groups]
+dev = [
+    "jupyterlab",
+    "ipykernel",
+]

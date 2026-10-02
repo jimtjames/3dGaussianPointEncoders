@@ -1,0 +1,8 @@
+../extensions/chamfer_dist/.
+../extensions/PyTorch2EMD/.
+../extensions/Pointnet2_PyTorch/pointnet2_ops_lib/.
+../extensions/causal-conv1d/.
+../extensions/mamba/.
+../extensions/KNN_CUDA/.
+mlflow
+ray[tune]

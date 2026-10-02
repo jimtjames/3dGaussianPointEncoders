@@ -1,0 +1,35 @@
+name: mamba3d
+channels:
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - conda-forge::pytorch=2.7.1
+  - conda-forge::torchvision
+  #- conda-forge::mmcv=2.2.0
+  - conda-forge::cuda-toolkit=12.9.1
+  - conda-forge::cuda-cudart=12.9.79
+  - conda-forge::cuda-cudart_linux-64=12.9.79
+  #- conda-forge::numba
+  #- conda-forge::numba-cuda
+  #- conda-forge::mmdet=3.3.0
+  - conda-forge::open3d
+  - conda-forge::ninja
+  - conda-forge::mamba-ssm=2.2.5
+  - conda-forge::causal-conv1d=1.5.2
+  - conda-forge::easydict
+  - conda-forge::h5py
+  - conda-forge::timm
+  - conda-forge::transforms3d
+  - conda-forge::scipy
+  - conda-forge::termcolor
+  - conda-forge::tensorboardX
+  - conda-forge::gxx
+  - conda-forge::cmake
+  - conda-forge::make
+  #- conda-forge::mmdet
+  #- pip:
+    #- openmim
+    #- waymo-open-dataset-tf-2-11-0
